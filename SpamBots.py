@@ -720,11 +720,11 @@ async def _(e):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "Pong!"
+        text = "😈SING😈"
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"🤖 𝗣𝗼𝗻𝗴!\n`{ms}` 𝗺𝘀\n 𝗦𝗣𝗔𝗠𝗕𝗢𝗧 𝗢𝗡 𝗙𝗜𝗥𝗘 🔥")
+        await event.edit(f"💦 SING!\n`{ms}` 𝗺𝘀\n 🎃𝖲𝖧4𝖣𝖮𝖶 𝖲𝖯𝖠𝖬 𝖡𝖮𝖳🎃")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -797,7 +797,7 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀\n\n𝙐𝙩𝙞𝙡𝙨 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.ping\n.restart\n\n𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.bio\n.join\n.pjoin\n.leave\n\n𝙎𝙥𝙖𝙢 𝘾𝙤𝙢𝙢𝙖𝙣𝙙:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+        text = "COMMANDS IN\n\nSH4DOW SPAMBOT:\n.ping\n.restart\n\nJOIN COMMANDS:\n.join\n.pjoin\n.leave\n\nSPAM COMMANDS:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n\nFOR ANY PROBLEM IN SPAMMING JOIN @SH4DOW_CHATTERS"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
