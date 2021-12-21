@@ -751,7 +751,7 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "COMMANDS IN SH4DOW SPAMBOT\n\nSTART COMMANS:\n.ping\n.restart\n\nJOIN COMMANDS:\n.join\n.pjoin\n.leave\n\nSPAM COMMANDS:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n\n\nSCRAP COMMANDS:\n.inviteall\n\n\FOR ANY PROBLEM IN SPAMMING JOIN @SH4DOW_CHATTERS"
+        text = "SH4DOW SPAMBOT\n\nSTART COMMANS:\n.ping\n.restart\n\nJOIN COMMANDS:\n.join\n.pjoin\n.leave\n\nSPAM COMMANDS:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n\n\nSCRAP COMMANDS:\n.inviteall\n\nFOR ANY PROBLEM IN SPAMMING JOIN @SH4DOW_CHATTERS"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
@@ -871,7 +871,7 @@ text = """ """
 print(text)
 print("")
 print(
-    "CONGRATULATIONS 🥳🥳..UR Spam Bots Ready to use"
+    "CONGRATULATIONS 🥳🥳..UR SH4DOW Bots Ready to use"
 )
 if len(sys.argv) not in (1, 3, 4):
     try:
