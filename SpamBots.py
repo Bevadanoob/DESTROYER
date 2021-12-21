@@ -548,52 +548,6 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None)
 
 
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None)
-        Ustad = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        await e.get_reply_message()
-        if len(Ustad) == 2:
-            message = str(Ustad[1])
-            print(message)
-            a = await e.client.get_entity(message)
-            g = a.id
-            c = a.first_name
-            username = f"[{c}](tg://user?id={g})"
-            counter = int(Ustad[0])
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
-        elif e.reply_to_msg_id:
-            a = await e.get_reply_message()
-            b = await e.client.get_entity(a.sender_id)
-            g = b.id
-            c = b.first_name
-            counter = int(Ustad[0])
-            username = f"[{c}](tg://user?id={g})"
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
 
 
 @idk.on(events.NewMessage(incoming=True))
@@ -724,7 +678,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"💦 SING!\n`{ms}` 𝗺𝘀\n 🎃𝖲𝖧4𝖣𝖮𝖶 𝖲𝖯𝖠𝖬 𝖡𝖮𝖳🎃")
+        await event.edit(f"💦 SONG!\n`{ms}` 𝗺𝘀\n 🎃𝖲𝖧4𝖣𝖮𝖶 𝖲𝖯𝖠𝖬 𝖡𝖮𝖳🎃")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -797,7 +751,7 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "COMMANDS IN\n\nSH4DOW SPAMBOT:\n.ping\n.restart\n\nJOIN COMMANDS:\n.join\n.pjoin\n.leave\n\nSPAM COMMANDS:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n\nFOR ANY PROBLEM IN SPAMMING JOIN @SH4DOW_CHATTERS"
+        text = "COMMANDS IN SH4DOW SPAMBOT\n\nSTART COMMANS:\n.ping\n.restart\n\nJOIN COMMANDS:\n.join\n.pjoin\n.leave\n\nSPAM COMMANDS:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n\n\nSCRAP COMMANDS:\n.inviteall\n\n\FOR ANY PROBLEM IN SPAMMING JOIN @SH4DOW_CHATTERS"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
