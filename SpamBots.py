@@ -724,7 +724,9 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"🤖 𝗣𝗼𝗻𝗴!\n`{ms}` 𝗺𝘀\n 𝗦𝗣𝗔𝗠𝗕𝗢𝗧 𝗢𝗡 𝗙𝗜𝗥𝗘 🔥")
+        await event.edit(f"🎃 PONG!\n`{ms}` NET\n ▀█ █▀█ █▄░█ █▀▀
+█▀▀ █▄█ █░▀█ █▄█
+")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -797,7 +799,7 @@ async def restart(e):
 @ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
-        text = "[ 𝐒𝐇4𝐃𝐎𝐖 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n\𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n\𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 @SH4DOW_SPAMBOT_SUPPORT"
+        text = "[ 𝐒𝐇4𝐃𝐎𝐖 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 ]\n\n𝐒𝐓𝐀𝐑𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐉𝐎𝐈𝐍 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.pjoin\n.leave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.replyraid\n.dreplyraid\n\n𝐒𝐂𝐑𝐀𝐏 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.scrap\n\n𝐅𝐎𝐑 𝐍𝐄𝐄𝐃 𝐀𝐍𝐘 𝐇𝐄𝐋𝐏 𝐀𝐁𝐎𝐔𝐓 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 𝐉𝐎𝐈𝐍 @SH4DOW_SPAMBOT_SUPPORT"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
@@ -1018,7 +1020,7 @@ text = """ """
 print(text)
 print("")
 print(
-    "CONGRATULATIONS 🥳🥳..UR Spam Bots Ready to use"
+    "CONGRATULATIONS 🥳🥳..UR SH4DOW Bots Ready to use"
 )
 if len(sys.argv) not in (1, 3, 4):
     try:
